@@ -19,4 +19,4 @@ class Transaction(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.customer.username + " purchased " + self.product.title + " at " + self.created_at
+        return str(self.id)
